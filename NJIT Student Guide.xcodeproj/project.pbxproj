@@ -34,7 +34,6 @@
 		B7FED58F1BB62D4C00F3FEB8 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FED58E1BB62D4C00F3FEB8 /* ScheduleViewController.swift */; };
 		B7FED5911BB6449F00F3FEB8 /* AtheleticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FED5901BB6449F00F3FEB8 /* AtheleticViewController.swift */; };
 		D408EE601BDC3678009DB12C /* RestCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408EE5F1BDC3678009DB12C /* RestCall.swift */; };
-		D444539B1BDFF74E00F9123C /* SRWebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D444539A1BDFF74E00F9123C /* SRWebClient.swift */; };
 		D4493FC31BE108F200B21858 /* ProfessorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4493FC21BE108F200B21858 /* ProfessorListViewController.swift */; };
 		D4D285941BE06814007F3930 /* toDoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D4D285921BE06814007F3930 /* toDoModel.xcdatamodeld */; };
 		D4D285971BE0684F007F3930 /* ToDoModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D285951BE0684F007F3930 /* ToDoModel+CoreDataProperties.swift */; };
@@ -75,7 +74,6 @@
 		B7FED58E1BB62D4C00F3FEB8 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		B7FED5901BB6449F00F3FEB8 /* AtheleticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtheleticViewController.swift; sourceTree = "<group>"; };
 		D408EE5F1BDC3678009DB12C /* RestCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestCall.swift; sourceTree = "<group>"; };
-		D444539A1BDFF74E00F9123C /* SRWebClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRWebClient.swift; sourceTree = "<group>"; };
 		D4493FC21BE108F200B21858 /* ProfessorListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfessorListViewController.swift; path = ../ProfessorListViewController.swift; sourceTree = "<group>"; };
 		D4D285931BE06814007F3930 /* toDoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = toDoModel.xcdatamodel; sourceTree = "<group>"; };
 		D4D285951BE0684F007F3930 /* ToDoModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ToDoModel+CoreDataProperties.swift"; path = "../ToDoModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 				D4493FC21BE108F200B21858 /* ProfessorListViewController.swift */,
 				D4D285951BE0684F007F3930 /* ToDoModel+CoreDataProperties.swift */,
 				D4D285961BE0684F007F3930 /* ToDoModel.swift */,
-				D444539A1BDFF74E00F9123C /* SRWebClient.swift */,
 				70AFC5331BDC36B70029FF09 /* ContactCellControl.swift */,
 				702FDFCF1BE04BE60005056A /* TestInternet.swift */,
 				70AFC52B1BDC18FB0029FF09 /* VectorControllerCell.swift */,
@@ -251,7 +248,6 @@
 				70AFC5321BDC344C0029FF09 /* ContactViewController.swift in Sources */,
 				D4D2859A1BE06917007F3930 /* toDoPersist.swift in Sources */,
 				70AFC5341BDC36B70029FF09 /* ContactCellControl.swift in Sources */,
-				D444539B1BDFF74E00F9123C /* SRWebClient.swift in Sources */,
 				B7FED5911BB6449F00F3FEB8 /* AtheleticViewController.swift in Sources */,
 				70AFC5301BDC18FB0029FF09 /* VectorViewController.swift in Sources */,
 				0435F17C1BC4E631004B12F0 /* EurekaTableCellModel.swift in Sources */,
@@ -381,7 +377,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "NJIT Student Guide/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Srinivasan.NJIT-Student-Guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -396,7 +392,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "NJIT Student Guide/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Srinivasan.NJIT-Student-Guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
