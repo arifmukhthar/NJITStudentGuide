@@ -13,6 +13,7 @@
 		0435F1721BC4D703004B12F0 /* EurekaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435F1711BC4D703004B12F0 /* EurekaViewController.swift */; };
 		0435F17A1BC4E27D004B12F0 /* EurekaTableControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435F1791BC4E27D004B12F0 /* EurekaTableControllerCell.swift */; };
 		0435F17C1BC4E631004B12F0 /* EurekaTableCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435F17B1BC4E631004B12F0 /* EurekaTableCellModel.swift */; };
+		045286F21BEB3C5F007B5369 /* ShuttleRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045286F11BEB3C5F007B5369 /* ShuttleRoute.swift */; };
 		0468EE831BC320010032AC7D /* DateSelectAtheleticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468EE821BC320010032AC7D /* DateSelectAtheleticViewController.swift */; };
 		047761951BC9BB4A00D98830 /* AcademicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047761941BC9BB4A00D98830 /* AcademicListViewController.swift */; };
 		04D9A16C1BC4AA13004B5A5C /* AcademicCalendarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D9A16B1BC4AA13004B5A5C /* AcademicCalendarTableViewController.swift */; };
@@ -51,6 +52,7 @@
 		0435F1711BC4D703004B12F0 /* EurekaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EurekaViewController.swift; sourceTree = "<group>"; };
 		0435F1791BC4E27D004B12F0 /* EurekaTableControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EurekaTableControllerCell.swift; sourceTree = "<group>"; };
 		0435F17B1BC4E631004B12F0 /* EurekaTableCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EurekaTableCellModel.swift; sourceTree = "<group>"; };
+		045286F11BEB3C5F007B5369 /* ShuttleRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShuttleRoute.swift; sourceTree = "<group>"; };
 		0468EE821BC320010032AC7D /* DateSelectAtheleticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSelectAtheleticViewController.swift; sourceTree = "<group>"; };
 		047761941BC9BB4A00D98830 /* AcademicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcademicListViewController.swift; sourceTree = "<group>"; };
 		04D9A16B1BC4AA13004B5A5C /* AcademicCalendarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcademicCalendarTableViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				D4D285921BE06814007F3930 /* toDoModel.xcdatamodeld */,
 				D4D285991BE06917007F3930 /* toDoPersist.swift */,
 				0431AC811BEA850C00131AEC /* ShuttleMapViewController.swift */,
+				045286F11BEB3C5F007B5369 /* ShuttleRoute.swift */,
 			);
 			path = "NJIT Student Guide";
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				040B86C41BCF506B008457AE /* AcademicCell.swift in Sources */,
 				D4FD26621BDDC53E00A7F3F3 /* PostLostItemViewController.swift in Sources */,
 				0468EE831BC320010032AC7D /* DateSelectAtheleticViewController.swift in Sources */,
+				045286F21BEB3C5F007B5369 /* ShuttleRoute.swift in Sources */,
 				802C84201BDDA57B007D775B /* ViewController.swift in Sources */,
 				702FDFD01BE04BE60005056A /* TestInternet.swift in Sources */,
 				B7FED58F1BB62D4C00F3FEB8 /* ScheduleViewController.swift in Sources */,
