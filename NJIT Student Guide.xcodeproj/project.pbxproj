@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		040B86C41BCF506B008457AE /* AcademicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040B86C31BCF506B008457AE /* AcademicCell.swift */; };
 		0431AC821BEA850C00131AEC /* ShuttleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431AC811BEA850C00131AEC /* ShuttleMapViewController.swift */; };
-		0431AC841BEA97DE00131AEC /* publicXMLFeed.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0431AC831BEA97DE00131AEC /* publicXMLFeed.xml */; };
 		0435F1721BC4D703004B12F0 /* EurekaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435F1711BC4D703004B12F0 /* EurekaViewController.swift */; };
 		0435F17A1BC4E27D004B12F0 /* EurekaTableControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435F1791BC4E27D004B12F0 /* EurekaTableControllerCell.swift */; };
 		0435F17C1BC4E631004B12F0 /* EurekaTableCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435F17B1BC4E631004B12F0 /* EurekaTableCellModel.swift */; };
-		045286F21BEB3C5F007B5369 /* ShuttleRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045286F11BEB3C5F007B5369 /* ShuttleRoute.swift */; };
 		0468EE831BC320010032AC7D /* DateSelectAtheleticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468EE821BC320010032AC7D /* DateSelectAtheleticViewController.swift */; };
 		047761951BC9BB4A00D98830 /* AcademicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047761941BC9BB4A00D98830 /* AcademicListViewController.swift */; };
 		04D9A16C1BC4AA13004B5A5C /* AcademicCalendarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D9A16B1BC4AA13004B5A5C /* AcademicCalendarTableViewController.swift */; };
+		04E283E01C0667CF00450A05 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E283DF1C0667CF00450A05 /* Station.swift */; };
+		04E283E21C0667ED00450A05 /* ShuttleStopSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E283E11C0667ED00450A05 /* ShuttleStopSelectViewController.swift */; };
 		702FDFD01BE04BE60005056A /* TestInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FDFCF1BE04BE60005056A /* TestInternet.swift */; };
 		70AFC52E1BDC18FB0029FF09 /* VectorControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFC52B1BDC18FB0029FF09 /* VectorControllerCell.swift */; };
 		70AFC52F1BDC18FB0029FF09 /* VectorDetailControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFC52C1BDC18FB0029FF09 /* VectorDetailControl.swift */; };
@@ -48,14 +48,14 @@
 /* Begin PBXFileReference section */
 		040B86C31BCF506B008457AE /* AcademicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcademicCell.swift; sourceTree = "<group>"; };
 		0431AC811BEA850C00131AEC /* ShuttleMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShuttleMapViewController.swift; sourceTree = "<group>"; };
-		0431AC831BEA97DE00131AEC /* publicXMLFeed.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = publicXMLFeed.xml; sourceTree = "<group>"; };
 		0435F1711BC4D703004B12F0 /* EurekaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EurekaViewController.swift; sourceTree = "<group>"; };
 		0435F1791BC4E27D004B12F0 /* EurekaTableControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EurekaTableControllerCell.swift; sourceTree = "<group>"; };
 		0435F17B1BC4E631004B12F0 /* EurekaTableCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EurekaTableCellModel.swift; sourceTree = "<group>"; };
-		045286F11BEB3C5F007B5369 /* ShuttleRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShuttleRoute.swift; sourceTree = "<group>"; };
 		0468EE821BC320010032AC7D /* DateSelectAtheleticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSelectAtheleticViewController.swift; sourceTree = "<group>"; };
 		047761941BC9BB4A00D98830 /* AcademicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcademicListViewController.swift; sourceTree = "<group>"; };
 		04D9A16B1BC4AA13004B5A5C /* AcademicCalendarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcademicCalendarTableViewController.swift; sourceTree = "<group>"; };
+		04E283DF1C0667CF00450A05 /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		04E283E11C0667ED00450A05 /* ShuttleStopSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShuttleStopSelectViewController.swift; sourceTree = "<group>"; };
 		702FDFCF1BE04BE60005056A /* TestInternet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestInternet.swift; path = ../TestInternet.swift; sourceTree = "<group>"; };
 		70AFC52B1BDC18FB0029FF09 /* VectorControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorControllerCell.swift; sourceTree = "<group>"; };
 		70AFC52C1BDC18FB0029FF09 /* VectorDetailControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorDetailControl.swift; sourceTree = "<group>"; };
@@ -119,7 +119,6 @@
 		80AC77571BB343AE004E050C /* NJIT Student Guide */ = {
 			isa = PBXGroup;
 			children = (
-				0431AC831BEA97DE00131AEC /* publicXMLFeed.xml */,
 				D4493FC21BE108F200B21858 /* ProfessorListViewController.swift */,
 				D4D285951BE0684F007F3930 /* ToDoModel+CoreDataProperties.swift */,
 				D4D285961BE0684F007F3930 /* ToDoModel.swift */,
@@ -155,7 +154,8 @@
 				D4D285921BE06814007F3930 /* toDoModel.xcdatamodeld */,
 				D4D285991BE06917007F3930 /* toDoPersist.swift */,
 				0431AC811BEA850C00131AEC /* ShuttleMapViewController.swift */,
-				045286F11BEB3C5F007B5369 /* ShuttleRoute.swift */,
+				04E283DF1C0667CF00450A05 /* Station.swift */,
+				04E283E11C0667ED00450A05 /* ShuttleStopSelectViewController.swift */,
 			);
 			path = "NJIT Student Guide";
 			sourceTree = "<group>";
@@ -228,7 +228,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0431AC841BEA97DE00131AEC /* publicXMLFeed.xml in Resources */,
 				80AC77671BB343AE004E050C /* LaunchScreen.storyboard in Resources */,
 				80AC77641BB343AE004E050C /* Assets.xcassets in Resources */,
 				80AC77621BB343AE004E050C /* Main.storyboard in Resources */,
@@ -247,7 +246,6 @@
 				040B86C41BCF506B008457AE /* AcademicCell.swift in Sources */,
 				D4FD26621BDDC53E00A7F3F3 /* PostLostItemViewController.swift in Sources */,
 				0468EE831BC320010032AC7D /* DateSelectAtheleticViewController.swift in Sources */,
-				045286F21BEB3C5F007B5369 /* ShuttleRoute.swift in Sources */,
 				802C84201BDDA57B007D775B /* ViewController.swift in Sources */,
 				702FDFD01BE04BE60005056A /* TestInternet.swift in Sources */,
 				B7FED58F1BB62D4C00F3FEB8 /* ScheduleViewController.swift in Sources */,
@@ -261,8 +259,10 @@
 				D4D2859A1BE06917007F3930 /* toDoPersist.swift in Sources */,
 				70AFC5341BDC36B70029FF09 /* ContactCellControl.swift in Sources */,
 				B7FED5911BB6449F00F3FEB8 /* AtheleticViewController.swift in Sources */,
+				04E283E01C0667CF00450A05 /* Station.swift in Sources */,
 				70AFC5301BDC18FB0029FF09 /* VectorViewController.swift in Sources */,
 				0435F17C1BC4E631004B12F0 /* EurekaTableCellModel.swift in Sources */,
+				04E283E21C0667ED00450A05 /* ShuttleStopSelectViewController.swift in Sources */,
 				047761951BC9BB4A00D98830 /* AcademicListViewController.swift in Sources */,
 				80AC775F1BB343AE004E050C /* ModelController.swift in Sources */,
 				0435F17A1BC4E27D004B12F0 /* EurekaTableControllerCell.swift in Sources */,
@@ -389,7 +389,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "NJIT Student Guide/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "balki.NJIT-Student-Guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -404,7 +404,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "NJIT Student Guide/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "balki.NJIT-Student-Guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
