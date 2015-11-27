@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:NJIT Student Guide.xcodeproj">
+      location = "self:/Users/Annie/Documents/NJITStudentGuide/NJIT Student Guide.xcodeproj">
    </FileRef>
 </Workspace>

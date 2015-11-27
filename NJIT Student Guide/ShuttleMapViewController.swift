@@ -1,11 +1,3 @@
-//
-//  ShuttleMapViewController.swift
-//  NJIT Student Guide
-//
-//  Created by Mac on 11/4/15.
-//  Copyright © 2015 Fantastic4. All rights reserved.
-//40.743193, -74.178550
-
 import UIKit
 import MapKit
 
@@ -41,6 +33,7 @@ class ShuttleMapViewController: UIViewController, MKMapViewDelegate, NSXMLParser
     var retLat = [Double]()
     
     var busAnnotation = [Station]()
+    var busOrstop : Bool = false
     
     
     override func viewDidLoad() {
@@ -48,7 +41,7 @@ class ShuttleMapViewController: UIViewController, MKMapViewDelegate, NSXMLParser
         zoomToRegion()
         getLatLon(mapSelect)
         let annotation = getAnnotationStop(stopLatArr, lon: stopLonArr, tit: stopTitleArr)
-        print("\(stopTitleArr))")
+       // print("\(stopTitleArr))")
         myMap.addAnnotations(annotation)
         super.viewDidLoad()
         startTimer()
@@ -61,7 +54,7 @@ class ShuttleMapViewController: UIViewController, MKMapViewDelegate, NSXMLParser
     var num = 0
     func startTimer()
     {
-        //onTick()
+        busOrstop = true
         timer = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "onTick:", userInfo: nil, repeats: true)
     }
     
@@ -75,7 +68,7 @@ class ShuttleMapViewController: UIViewController, MKMapViewDelegate, NSXMLParser
         parse2 = NSXMLParser(contentsOfURL: url)!
         parse2.delegate = self
         parse2.parse()
-        print("onTick Called \(num++)")
+       // print("onTick Called \(num++)")
         busAnnotation = getBusAnnotation(buslat, lon: buslon)
         myMap.addAnnotations(busAnnotation)
         
@@ -88,40 +81,28 @@ class ShuttleMapViewController: UIViewController, MKMapViewDelegate, NSXMLParser
         for annotation in annotations {
             points.append(annotation.coordinate)
         }
-        
         let polyline = MKPolyline(coordinates:&points, count: points.count)
-        print(points.count)
+        //print(points.count)
         myMap.addOverlay(polyline)
     }
-    var img = "bus_mini.png"
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         
         if let annotation = annotation as? Station{
             let identifier = "pin"
-            let title = annotation.title
-            var view:MKPinAnnotationView
-            //if pin == "stop"
-            //{
-            if let dequeview = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier) as? MKPinAnnotationView{
-                dequeview.annotation = annotation
-                view = dequeview
-            }else{
-                
-                view =  MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-                
-                
-                view.canShowCallout = true
-                view.calloutOffset = CGPoint(x: -5, y: 5)
-                if title == ""{
-                    view.pinTintColor = UIColor.redColor()
+           var view = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier)
+            
+            if view == nil {
+                view = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                view?.canShowCallout = true
+                if annotation.title == "" {
+                    print("bus")
+                    view?.image = UIImage(named: "img-bus")
                 }else{
-                    view.pinTintColor = UIColor.blueColor()
+                    print("stop")
+                    view?.image = UIImage(named: "img-stop")
                 }
             }
-            view.image = UIImage(named: "bus_mini")
-            view.backgroundColor = UIColor.clearColor()
             return view
-            
         }
         return nil
         
@@ -155,7 +136,7 @@ class ShuttleMapViewController: UIViewController, MKMapViewDelegate, NSXMLParser
         
         let location = CLLocationCoordinate2D(latitude: 40.743193, longitude: -74.178550)
         
-        let region = MKCoordinateRegionMakeWithDistance(location, 2000.0, 2000.0)
+        let region = MKCoordinateRegionMakeWithDistance(location, 30000.0, 30000.0)
         
         myMap.setRegion(region, animated: true)
     }
@@ -174,16 +155,12 @@ class ShuttleMapViewController: UIViewController, MKMapViewDelegate, NSXMLParser
         }
         return annotaions
     }
-    //var isStop = false
     func getAnnotationStop(lat: [Double],lon: [Double], tit: [String]) -> [Station]
     {
-        //pin = "stop"
         var annotaions: Array = [Station]()
         for var index = 0; index < lat.count; ++index
         {
-            //sStop = true
-            let annot = Station(latitude: lat[index], longitude: lon[index],title: tit[index],type: "stop")
-            //annot.title = tit[index]
+            let annot = Station(latitude: lat[index], longitude: lon[index],title: tit[index],type: "Bus in:\(GetPredictions.myDict[tit[index]]!)")
             annotaions.append(annot)
             
             
@@ -194,12 +171,11 @@ class ShuttleMapViewController: UIViewController, MKMapViewDelegate, NSXMLParser
     func getBusAnnotation(lat: [Double],lon: [Double]) -> [Station]
     {
         pin = "bus"
-        // isStop = false
         var annotaions: Array = [Station]()
         for var index = 0; index < lat.count; ++index
         {
             
-            let annot = Station(latitude: lat[index], longitude: lon[index],title: "", type: "bus")
+            let annot = Station(latitude: lat[index], longitude: lon[index],title: "", type: "")
             annotaions.append(annot)
             
         }
@@ -225,9 +201,11 @@ class ShuttleMapViewController: UIViewController, MKMapViewDelegate, NSXMLParser
         ename = elementName
         if elementName == "route"
         {
+            print(elementName)
             routeTitle = attributeDict["title"]! as String
             if routeTitle == map{
                 routeTag = attributeDict["tag"]! as String
+                GetPredictions.getPred(routeTag)
             }
         }
         if elementName == "stop"

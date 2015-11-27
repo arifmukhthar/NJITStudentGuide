@@ -13,7 +13,7 @@ class ShuttleStopSelectViewController: UIViewController,UIPickerViewDataSource,U
     @IBOutlet weak var picker: UIPickerView!
     var pickerData = [String]()
     override func viewDidLoad() {
-        pickerData = ["Kearney/Harrison","Penn Station Local","Campus Connect"]
+        pickerData = ["Kearney/Harrison","Penn Station Local","Campus Connect","All Campuses"]
         selectedMap = "Kearney/Harrison"
         self.picker.delegate = self
         self.picker.dataSource = self

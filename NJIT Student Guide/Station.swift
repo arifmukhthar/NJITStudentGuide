@@ -10,10 +10,10 @@ import MapKit
 
 class Station: NSObject, MKAnnotation {
     var title: String?
-    var subtitle: String?
     var latitude: Double
     var longitude:Double
-    var type = String()
+    var type : String
+    var img : UIImage?
     
     var coordinate: CLLocationCoordinate2D {
         return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
@@ -24,6 +24,14 @@ class Station: NSObject, MKAnnotation {
         self.longitude = longitude
         self.title = title
         self.type = type
+    }
+    
+    var subtitle: String?{
+        return type
+    }
+    
+    var image : UIImage?{
+        return img
     }
     
     /*func pinColor()-> MKPinAnnotationColor{
