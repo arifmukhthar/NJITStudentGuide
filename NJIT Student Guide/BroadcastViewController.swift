@@ -18,6 +18,9 @@ class BroadcastViewController: UITableViewController {
     override func viewDidLoad() {
         getJSON("https://web.njit.edu/~rb454/broadcast.php")
         idNA = "asdf"
+    
+        let postBtn : UIBarButtonItem = UIBarButtonItem(title: "Broadcast", style: UIBarButtonItemStyle.Plain, target: self, action: "postItemToBroadcast:")
+        self.navigationItem.rightBarButtonItem = postBtn
         super.viewDidLoad()
     }
     
@@ -61,5 +64,9 @@ class BroadcastViewController: UITableViewController {
         
         destVC.id = id[indexPath.row]
         
+    }
+    func postItemToBroadcast(sender: UIBarButtonItem){
+        UIApplication.sharedApplication().openURL(NSURL(string: "http://eventpost-cidcir9ze8.elasticbeanstalk.com")!)
+        print("posting broadcast")
     }
 }
