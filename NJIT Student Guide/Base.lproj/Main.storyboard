@@ -639,6 +639,9 @@
                                 <state key="normal" title="Broadcast" image="broadcast">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="qQE-b5-tWQ" kind="show" id="GEZ-a4-PMN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZU-gj-rV9">
                                 <rect key="frame" x="29" y="198" width="176" height="105"/>
@@ -784,6 +787,65 @@
             </objects>
             <point key="canvasLocation" x="929" y="442"/>
         </scene>
+        <!--Broadcast View Controller-->
+        <scene sceneID="M5S-cc-2Wl">
+            <objects>
+                <tableViewController id="qQE-b5-tWQ" customClass="BroadcastViewController" customModule="NJIT_Student_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Nzf-Ke-wGY">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BroadcastCell" id="SAf-Bp-zCT" customClass="BroadcastCell" customModule="NJIT_Student_Guide" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SAf-Bp-zCT" id="H0X-aU-uFK">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cx9-ay-Qa2">
+                                            <rect key="frame" x="126" y="11" width="459" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZg-3r-GBT">
+                                            <rect key="frame" x="8" y="11" width="99" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="cx9-ay-Qa2" firstAttribute="top" secondItem="H0X-aU-uFK" secondAttribute="topMargin" constant="3" id="3rv-er-FFy"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="WZg-3r-GBT" secondAttribute="leading" id="5yD-uG-CRf"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="WZg-3r-GBT" secondAttribute="bottom" constant="3" id="Uwg-KG-VC1"/>
+                                        <constraint firstItem="WZg-3r-GBT" firstAttribute="top" secondItem="H0X-aU-uFK" secondAttribute="topMargin" constant="3" id="WDi-AV-Mwe"/>
+                                        <constraint firstItem="cx9-ay-Qa2" firstAttribute="leading" secondItem="WZg-3r-GBT" secondAttribute="trailing" constant="19" id="ZLO-qL-nps"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="cx9-ay-Qa2" secondAttribute="trailing" constant="7" id="cJX-HX-d83"/>
+                                        <constraint firstItem="cx9-ay-Qa2" firstAttribute="leading" secondItem="H0X-aU-uFK" secondAttribute="leadingMargin" constant="118" id="pUn-7g-D9c"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="cx9-ay-Qa2" secondAttribute="bottom" constant="12" id="6Dl-95-cTd"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dateLabel" destination="WZg-3r-GBT" id="deP-Q2-4WZ"/>
+                                    <outlet property="titleLabel" destination="cx9-ay-Qa2" id="7wu-gS-KKH"/>
+                                    <segue destination="GfX-7p-QuO" kind="show" id="Hid-av-CRt"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qQE-b5-tWQ" id="r2r-vc-TYy"/>
+                            <outlet property="delegate" destination="qQE-b5-tWQ" id="g1N-bl-Ynw"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7nJ-Ce-gsg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1109" y="1375"/>
+        </scene>
         <!--Contact View Controller-->
         <scene sceneID="gdB-Ea-eJU">
             <objects>
@@ -894,7 +956,101 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jM5-RB-S97" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="912" y="1925"/>
+            <point key="canvasLocation" x="504" y="2201"/>
+        </scene>
+        <!--Broadcast Info View Controller-->
+        <scene sceneID="hig-Rs-0Zx">
+            <objects>
+                <viewController id="GfX-7p-QuO" customClass="BroadcastInfoViewController" customModule="NJIT_Student_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OAc-R2-rnw"/>
+                        <viewControllerLayoutGuide type="bottom" id="YnZ-cw-Ccp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LAE-av-JSd">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qry-IK-eXp">
+                                <rect key="frame" x="13" y="51" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Posted By:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykI-bq-3SX">
+                                <rect key="frame" x="28" y="165" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBv-Sa-bsl">
+                                <rect key="frame" x="69" y="107" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3g-lU-nYO">
+                                <rect key="frame" x="67" y="136" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Info:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2s-I9-Gmb">
+                                <rect key="frame" x="29" y="78" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sT5-4q-WYl">
+                                <rect key="frame" x="142" y="51" width="255" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODV-zF-dkg">
+                                <rect key="frame" x="142" y="78" width="255" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EventDate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jor-DM-u5X">
+                                <rect key="frame" x="142" y="107" width="255" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EventTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zv4-nr-dJo">
+                                <rect key="frame" x="142" y="136" width="255" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FromMsg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdJ-oi-eRo">
+                                <rect key="frame" x="142" y="165" width="255" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlO-nd-FMU">
+                                <rect key="frame" x="58" y="224" width="153" height="30"/>
+                                <state key="normal" title="Add Event to Calendar"/>
+                                <connections>
+                                    <action selector="addEventToCalendar:" destination="GfX-7p-QuO" eventType="touchUpInside" id="pSH-o3-gN4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="datelbl" destination="jor-DM-u5X" id="tgO-SP-Qmx"/>
+                        <outlet property="fromlbl" destination="cdJ-oi-eRo" id="v33-Dv-in7"/>
+                        <outlet property="msglbl" destination="ODV-zF-dkg" id="ljp-bN-0Jb"/>
+                        <outlet property="timelbl" destination="zv4-nr-dJo" id="Ic2-46-pRI"/>
+                        <outlet property="titlelbl" destination="sT5-4q-WYl" id="B7I-7L-IMC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oe8-wf-fsO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1169" y="2118"/>
         </scene>
         <!--Eureka View Controller-->
         <scene sceneID="4ZN-Fm-gpK">
@@ -1469,6 +1625,6 @@
         <image name="shuttle-1" width="1025" height="1025"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qA1-Wj-G6u"/>
+        <segue reference="tS8-E3-Z9z"/>
     </inferredMetricsTieBreakers>
 </document>
