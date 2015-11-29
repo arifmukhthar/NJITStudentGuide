@@ -42,6 +42,9 @@
 		B7FED58F1BB62D4C00F3FEB8 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FED58E1BB62D4C00F3FEB8 /* ScheduleViewController.swift */; };
 		B7FED5911BB6449F00F3FEB8 /* AtheleticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FED5901BB6449F00F3FEB8 /* AtheleticViewController.swift */; };
 		D152E3BE1C07C7B200863D7C /* GetPredictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D152E3BD1C07C7B200863D7C /* GetPredictions.swift */; };
+		D152E3C01C08F72C00863D7C /* BroadcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D152E3BF1C08F72C00863D7C /* BroadcastViewController.swift */; };
+		D152E3C21C08FF0700863D7C /* BroadcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D152E3C11C08FF0700863D7C /* BroadcastCell.swift */; };
+		D152E3C41C09074200863D7C /* BroadcastInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D152E3C31C09074200863D7C /* BroadcastInfoViewController.swift */; };
 		D408EE601BDC3678009DB12C /* RestCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408EE5F1BDC3678009DB12C /* RestCall.swift */; };
 		D4493FC31BE108F200B21858 /* ProfessorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4493FC21BE108F200B21858 /* ProfessorListViewController.swift */; };
 		D4D285941BE06814007F3930 /* toDoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D4D285921BE06814007F3930 /* toDoModel.xcdatamodeld */; };
@@ -91,6 +94,9 @@
 		B7FED58E1BB62D4C00F3FEB8 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		B7FED5901BB6449F00F3FEB8 /* AtheleticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtheleticViewController.swift; sourceTree = "<group>"; };
 		D152E3BD1C07C7B200863D7C /* GetPredictions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPredictions.swift; sourceTree = "<group>"; };
+		D152E3BF1C08F72C00863D7C /* BroadcastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BroadcastViewController.swift; sourceTree = "<group>"; };
+		D152E3C11C08FF0700863D7C /* BroadcastCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BroadcastCell.swift; sourceTree = "<group>"; };
+		D152E3C31C09074200863D7C /* BroadcastInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BroadcastInfoViewController.swift; sourceTree = "<group>"; };
 		D408EE5F1BDC3678009DB12C /* RestCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestCall.swift; sourceTree = "<group>"; };
 		D4493FC21BE108F200B21858 /* ProfessorListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfessorListViewController.swift; path = ../ProfessorListViewController.swift; sourceTree = "<group>"; };
 		D4D285931BE06814007F3930 /* toDoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = toDoModel.xcdatamodel; sourceTree = "<group>"; };
@@ -149,6 +155,11 @@
 				D4FD26611BDDC53E00A7F3F3 /* PostLostItemViewController.swift */,
 				D408EE5F1BDC3678009DB12C /* RestCall.swift */,
 				80AC77601BB343AE004E050C /* Main.storyboard */,
+				0435F1711BC4D703004B12F0 /* EurekaViewController.swift */,
+				D152E3C31C09074200863D7C /* BroadcastInfoViewController.swift */,
+				047761941BC9BB4A00D98830 /* AcademicListViewController.swift */,
+				D152E3C11C08FF0700863D7C /* BroadcastCell.swift */,
+				D152E3BF1C08F72C00863D7C /* BroadcastViewController.swift */,
 				04D9A16B1BC4AA13004B5A5C /* AcademicCalendarTableViewController.swift */,
 				047761941BC9BB4A00D98830 /* AcademicListViewController.swift */,
 				040B86C31BCF506B008457AE /* AcademicCell.swift */,
@@ -269,8 +280,10 @@
 				80D867621C0A8A8B00087DBC /* BooksTableCellModel.swift in Sources */,
 				B7FED58F1BB62D4C00F3FEB8 /* ScheduleViewController.swift in Sources */,
 				80AC775B1BB343AE004E050C /* RootViewController.swift in Sources */,
+				D152E3C21C08FF0700863D7C /* BroadcastCell.swift in Sources */,
 				D152E3BE1C07C7B200863D7C /* GetPredictions.swift in Sources */,
 				0431AC821BEA850C00131AEC /* ShuttleMapViewController.swift in Sources */,
+				D152E3C41C09074200863D7C /* BroadcastInfoViewController.swift in Sources */,
 				0435F1721BC4D703004B12F0 /* EurekaViewController.swift in Sources */,
 				B76BA9121BB8CD75000754F3 /* SetAppoinmentAtheleticViewController.swift in Sources */,
 				80531D491BDB277000C054BE /* KnowYourProfessorController.swift in Sources */,
@@ -292,6 +305,7 @@
 				0435F17A1BC4E27D004B12F0 /* EurekaTableControllerCell.swift in Sources */,
 				D4D285981BE0684F007F3930 /* ToDoModel.swift in Sources */,
 				80AC775D1BB343AE004E050C /* DataViewController.swift in Sources */,
+				D152E3C01C08F72C00863D7C /* BroadcastViewController.swift in Sources */,
 				D4493FC31BE108F200B21858 /* ProfessorListViewController.swift in Sources */,
 				04D9A16C1BC4AA13004B5A5C /* AcademicCalendarTableViewController.swift in Sources */,
 				70AFC52F1BDC18FB0029FF09 /* VectorDetailControl.swift in Sources */,
