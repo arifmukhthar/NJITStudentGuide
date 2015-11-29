@@ -33,6 +33,11 @@
 		80AC77621BB343AE004E050C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80AC77601BB343AE004E050C /* Main.storyboard */; };
 		80AC77641BB343AE004E050C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80AC77631BB343AE004E050C /* Assets.xcassets */; };
 		80AC77671BB343AE004E050C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80AC77651BB343AE004E050C /* LaunchScreen.storyboard */; };
+		80D8675C1C0A73F600087DBC /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D8675B1C0A73F600087DBC /* BooksViewController.swift */; };
+		80D8675E1C0A773800087DBC /* RestCall1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D8675D1C0A773800087DBC /* RestCall1.swift */; };
+		80D867601C0A7E8F00087DBC /* BooksTableControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D8675F1C0A7E8F00087DBC /* BooksTableControllerCell.swift */; };
+		80D867621C0A8A8B00087DBC /* BooksTableCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D867611C0A8A8B00087DBC /* BooksTableCellModel.swift */; };
+		80D867641C0AC93500087DBC /* PostBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D867631C0AC93500087DBC /* PostBooksViewController.swift */; };
 		B76BA9121BB8CD75000754F3 /* SetAppoinmentAtheleticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76BA9111BB8CD75000754F3 /* SetAppoinmentAtheleticViewController.swift */; };
 		B7FED58F1BB62D4C00F3FEB8 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FED58E1BB62D4C00F3FEB8 /* ScheduleViewController.swift */; };
 		B7FED5911BB6449F00F3FEB8 /* AtheleticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FED5901BB6449F00F3FEB8 /* AtheleticViewController.swift */; };
@@ -77,6 +82,11 @@
 		80AC77681BB343AE004E050C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80AC77711BB343AE004E050C /* NJIT_Student_GuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NJIT_Student_GuideUITests.swift; sourceTree = "<group>"; };
 		80AC77731BB343AE004E050C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80D8675B1C0A73F600087DBC /* BooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
+		80D8675D1C0A773800087DBC /* RestCall1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestCall1.swift; sourceTree = "<group>"; };
+		80D8675F1C0A7E8F00087DBC /* BooksTableControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksTableControllerCell.swift; sourceTree = "<group>"; };
+		80D867611C0A8A8B00087DBC /* BooksTableCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksTableCellModel.swift; sourceTree = "<group>"; };
+		80D867631C0AC93500087DBC /* PostBooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostBooksViewController.swift; sourceTree = "<group>"; };
 		B76BA9111BB8CD75000754F3 /* SetAppoinmentAtheleticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetAppoinmentAtheleticViewController.swift; sourceTree = "<group>"; };
 		B7FED58E1BB62D4C00F3FEB8 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		B7FED5901BB6449F00F3FEB8 /* AtheleticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtheleticViewController.swift; sourceTree = "<group>"; };
@@ -136,10 +146,10 @@
 				0435F1791BC4E27D004B12F0 /* EurekaTableControllerCell.swift */,
 				0435F17B1BC4E631004B12F0 /* EurekaTableCellModel.swift */,
 				0435F1711BC4D703004B12F0 /* EurekaViewController.swift */,
+				D4FD26611BDDC53E00A7F3F3 /* PostLostItemViewController.swift */,
+				D408EE5F1BDC3678009DB12C /* RestCall.swift */,
 				80AC77601BB343AE004E050C /* Main.storyboard */,
 				04D9A16B1BC4AA13004B5A5C /* AcademicCalendarTableViewController.swift */,
-				D408EE5F1BDC3678009DB12C /* RestCall.swift */,
-				D4FD26611BDDC53E00A7F3F3 /* PostLostItemViewController.swift */,
 				047761941BC9BB4A00D98830 /* AcademicListViewController.swift */,
 				040B86C31BCF506B008457AE /* AcademicCell.swift */,
 				0468EE821BC320010032AC7D /* DateSelectAtheleticViewController.swift */,
@@ -159,6 +169,11 @@
 				D152E3BD1C07C7B200863D7C /* GetPredictions.swift */,
 				04E283DF1C0667CF00450A05 /* Station.swift */,
 				04E283E11C0667ED00450A05 /* ShuttleStopSelectViewController.swift */,
+				80D8675B1C0A73F600087DBC /* BooksViewController.swift */,
+				80D8675D1C0A773800087DBC /* RestCall1.swift */,
+				80D8675F1C0A7E8F00087DBC /* BooksTableControllerCell.swift */,
+				80D867611C0A8A8B00087DBC /* BooksTableCellModel.swift */,
+				80D867631C0AC93500087DBC /* PostBooksViewController.swift */,
 			);
 			path = "NJIT Student Guide";
 			sourceTree = "<group>";
@@ -204,7 +219,7 @@
 				TargetAttributes = {
 					80AC77541BB343AE004E050C = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 3B7C99N489;
+						DevelopmentTeam = F48ZTW93WJ;
 					};
 				};
 			};
@@ -251,6 +266,7 @@
 				0468EE831BC320010032AC7D /* DateSelectAtheleticViewController.swift in Sources */,
 				802C84201BDDA57B007D775B /* ViewController.swift in Sources */,
 				702FDFD01BE04BE60005056A /* TestInternet.swift in Sources */,
+				80D867621C0A8A8B00087DBC /* BooksTableCellModel.swift in Sources */,
 				B7FED58F1BB62D4C00F3FEB8 /* ScheduleViewController.swift in Sources */,
 				80AC775B1BB343AE004E050C /* RootViewController.swift in Sources */,
 				D152E3BE1C07C7B200863D7C /* GetPredictions.swift in Sources */,
@@ -261,13 +277,17 @@
 				D4D285941BE06814007F3930 /* toDoModel.xcdatamodeld in Sources */,
 				70AFC5321BDC344C0029FF09 /* ContactViewController.swift in Sources */,
 				D4D2859A1BE06917007F3930 /* toDoPersist.swift in Sources */,
+				80D867601C0A7E8F00087DBC /* BooksTableControllerCell.swift in Sources */,
+				80D8675E1C0A773800087DBC /* RestCall1.swift in Sources */,
 				70AFC5341BDC36B70029FF09 /* ContactCellControl.swift in Sources */,
 				B7FED5911BB6449F00F3FEB8 /* AtheleticViewController.swift in Sources */,
 				04E283E01C0667CF00450A05 /* Station.swift in Sources */,
+				80D8675C1C0A73F600087DBC /* BooksViewController.swift in Sources */,
 				70AFC5301BDC18FB0029FF09 /* VectorViewController.swift in Sources */,
 				0435F17C1BC4E631004B12F0 /* EurekaTableCellModel.swift in Sources */,
 				04E283E21C0667ED00450A05 /* ShuttleStopSelectViewController.swift in Sources */,
 				047761951BC9BB4A00D98830 /* AcademicListViewController.swift in Sources */,
+				80D867641C0AC93500087DBC /* PostBooksViewController.swift in Sources */,
 				80AC775F1BB343AE004E050C /* ModelController.swift in Sources */,
 				0435F17A1BC4E27D004B12F0 /* EurekaTableControllerCell.swift in Sources */,
 				D4D285981BE0684F007F3930 /* ToDoModel.swift in Sources */,
@@ -395,7 +415,7 @@
 				INFOPLIST_FILE = "NJIT Student Guide/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "balki.NJIT-Student-Guide";
+				PRODUCT_BUNDLE_IDENTIFIER = "arif.NJIT-Student-Guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -410,7 +430,7 @@
 				INFOPLIST_FILE = "NJIT Student Guide/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "balki.NJIT-Student-Guide";
+				PRODUCT_BUNDLE_IDENTIFIER = "arif.NJIT-Student-Guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

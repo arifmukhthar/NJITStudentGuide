@@ -9,7 +9,7 @@
 import Foundation
 class EurekaTableCellModel {
     
-     var profileName = [String]()
+    var profileName = [String]()
     var item_images = [String]()
     var foundItemName = [String]()
     var itemDescription = [String]()
